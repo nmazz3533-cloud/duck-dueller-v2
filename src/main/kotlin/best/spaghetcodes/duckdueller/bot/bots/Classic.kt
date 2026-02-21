@@ -13,7 +13,7 @@ import best.spaghetcodes.duckdueller.utils.*
 import net.minecraft.init.Blocks
 import net.minecraft.util.Vec3
 
-class Classic : BotBase("/play duels_classic_duel"), Bow, Rod, MovePriority {
+class Classic : BotBase("/play duels_blitz_duel"), Bow, Rod, MovePriority {
 
     override fun getName(): String {
         return "Classic"
@@ -22,9 +22,9 @@ class Classic : BotBase("/play duels_classic_duel"), Bow, Rod, MovePriority {
     init {
         setStatKeys(
             mapOf(
-                "wins" to "player.stats.Duels.classic_duel_wins",
-                "losses" to "player.stats.Duels.classic_duel_losses",
-                "ws" to "player.stats.Duels.current_classic_winstreak",
+                "wins" to "player.stats.Duels.blitz_duel_wins",
+                "losses" to "player.stats.Duels.blitz_duel_losses",
+                "ws" to "player.stats.Duels.current_blitz_winstreak",
             )
         )
     }
